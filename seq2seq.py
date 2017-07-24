@@ -5,7 +5,7 @@ import sys
 
 class Seq2Seq(object):
 
-    def model(self, xseq_len, yseq_len, 
+    def __init__(self, xseq_len, yseq_len, 
             xvocab_size, yvocab_size,
             emb_dim, num_layers, ckpt_path,
             lr=0.0001, 
